@@ -1,0 +1,77 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[width=150mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry} 
+\usepackage{fancyhdr} 
+\pagestyle{fancy}
+
+\begin{document}
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+        \Huge
+        \vspace{0.5cm}
+        \Huge
+        \textbf{Apprendre à utiliser l'outil LaTeX}\\
+        \vspace{1.5cm}
+        \Huge
+		Amira Bouchama
+        \vfill
+ 		 \vspace{0.5cm}
+ 		 \includegraphics[width=0.7\textwidth]{LatexLogo}\\
+ 		  \large
+		Club HEC\\
+         \large
+        29 Avril 2021
+    \end{center}
+\end{titlepage}
+\chapter{Titre du chapitre}
+\section{Math avec LaTeX}
+Exemple d'une formule mathématique:
+$$E(X)=\frac{a}{b}$$ % formule math centrée
+\\Exemple d'une formule mathématique numérotée:
+\begin{equation}
+Var(X)=\frac{a}{b^{2}}
+\end{equation} % equation numérotée
+\\Voici une note\footnotemark \footnotetext{La définition de la note}
+\newpage
+\section{Liste}
+Un exemple:
+\begin{itemize}
+\item[\textbullet] premier item
+\item[*] deuxième item
+\end{itemize}
+\section{Figure et Tableau}
+La figure \ref{info pour se referer}
+\begin{figure}[h]
+\centering
+\includegraphics[scale= 0.5]{LatexLogo}
+\caption{LaTeX}  
+\label{info pour se referer} 
+\end{figure} 
+
+Le tableau \ref{abc}
+\begin{table}[h]
+\centering
+\begin{tabular}{| l | l | l |}
+\hline
+L1C1 & L1C2 & L1C3 \\
+\hline
+L2C1 & L2C2 & L2C3 \\
+\hline
+L3C1 & L3C2 & L3C3 \\
+\hline
+\end{tabular}
+\caption{caption du tableau}
+\label{abc}
+\end{table}
+\paragraph{The end}
+\begin{center}
+Je vous remercie d'avoir assister à la formation.\\ % saut de la ligne
+\large{\textbf{Bon courage ;)}} % ecrit en large et gras
+\end{center} %le texte est mis en centre
+
+\end{document}
+
